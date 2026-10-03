@@ -4,7 +4,7 @@ UE24CS352A Machine Learning Mini-Project
 
 **Team:**
 - Dimpal N (PES2UG24CS159)
-- Meenakshi P (PES2UG25CS814)
+- Meenakshi P (PES2UG25CS811)
 
 ## Problem statement
 Classify satellite images as **ship / no ship** (binary classification) using the Airbus Ship Detection Challenge data. We compare traditional machine learning on hand-crafted features (Naive Bayes, LDA, KNN, Random Forest, SVM) with deep learning (a simple CNN trained from scratch and a transfer-learning CNN).
