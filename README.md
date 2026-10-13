@@ -67,7 +67,21 @@ Always predicting "no ship" gives 0.784 on our test set.
 
 Random Forest is the best traditional method, and feature engineering improves every model compared with raw pixels.
 
-**CNN results:** [teammate: add results here]
+**CNN results:** ### CNN Results
+
+Two CNN approaches were evaluated for ship image classification: SIM-CNN, trained from scratch, and TL-CNN, using transfer learning with a pretrained DenseNet-169 backbone. Both models were trained for 5 epochs and evaluated on the test dataset.
+
+| Metric | SIM-CNN | TL-CNN |
+|---|---:|---:|
+| Accuracy | 75.00% | 92.10% |
+| Precision | 45.28% | 82.01% |
+| Recall | 75.46% | 81.25% |
+| F1-score | 56.60% | 81.63% |
+| Specificity | 74.87% | 95.09% |
+
+TL-CNN achieved the best overall performance, with 92.10% accuracy and an 81.63% F1-score, outperforming SIM-CNN across all reported metrics. This suggests that transfer learning with DenseNet-169 provides more effective image features for this classification task.
+
+The CNN results complement the traditional ML comparison and demonstrate the benefit of deep learning, particularly transfer learning, for ship image classification.
 
 ## Reference
 Based on the approach in "Airbus Ship Detection: Traditional vs. Convolutional Neural Network Approach" (Chen, Zheng, Zhou, CS229 project).
